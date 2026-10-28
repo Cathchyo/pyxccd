@@ -1,0 +1,3 @@
+# Preparation and metrics need only NumPy. COLD also needs its native extension.
+numpy>=2.0
+pyxccd

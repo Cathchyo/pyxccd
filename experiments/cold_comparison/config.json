@@ -1,0 +1,18 @@
+{
+  "protocol": "hls51rtq_history_cold_v1",
+  "tile": "51RTQ",
+  "tile_width": 3660,
+  "block_size": 122,
+  "bands": ["blue", "green", "red", "nir", "swir1", "swir2"],
+  "history_start": "2019-01-01",
+  "periods": {
+    "validation": ["2021-01-01", "2022-12-31"],
+    "test": ["2023-01-01", "2024-12-31"]
+  },
+  "quality": {"min_dates_per_year": 12, "min_quarters_per_year": 3, "max_gap_days": 180, "max_edge_gap_days": 120},
+  "fixed": {"lam": 20.0, "gap_days": 365.25, "b_c2": true, "output_cm": false},
+  "grid": {"p_cg": [0.95, 0.99, 0.999], "conse": [4, 6, 8]},
+  "disturbance_magnitude_threshold": 200.0,
+  "confirmed_probability": 100,
+  "mode": "retrospective_full_sequence"
+}

@@ -1,0 +1,63 @@
+﻿{
+  "server": "wangshengjie@10.75.68.230:25012",
+  "workspace": "/gpfs/home/wangshengjie/data-pre/cold_comparison_20261028_v1",
+  "status": {
+    "started_utc": "2026-10-28T02:59:47.942644+00:00",
+    "status": "complete",
+    "completed": [
+      "audit",
+      "history",
+      "audit_after_history",
+      "prepare",
+      "smoke"
+    ],
+    "stage": "smoke",
+    "updated_utc": "2026-10-28T03:00:54.632462+00:00"
+  },
+  "dataset": {
+    "status": "complete",
+    "created_utc": "2026-10-28T03:00:50.661679+00:00",
+    "sample_count": 17764,
+    "splits": {
+      "validation": 8793,
+      "test": 8971
+    },
+    "integer_conversion": "astype(int64): truncate fractional same-day means toward zero, matching wrapper",
+    "raw_source_qc": {
+      "flagged_samples": 593,
+      "verified_source_scene_count": 147058,
+      "policy": "Preserve all targets after raw-source scan; no interpolation or sample deletion"
+    },
+    "label_policy": "reference.csv is read only by tuning/evaluation, never by the detector"
+  },
+  "prepared_total_bytes": 35509064,
+  "prepared_manifest_sha256": "27a36d66b981496711139520d85b72018eed8d8e014ad789b1637b81813cd957",
+  "smoke": {
+    "created_utc": "2026-10-28T03:00:54.479583+00:00",
+    "dataset_status": "complete",
+    "split": "validation",
+    "params": {
+      "p_cg": 0.99,
+      "conse": 6
+    },
+    "n": 32,
+    "limited_smoke": true,
+    "errors": 0,
+    "dataset_manifest_sha256": "27a36d66b981496711139520d85b72018eed8d8e014ad789b1637b81813cd957",
+    "predictions_sha256": "f918be59ff40382fdb8dbf3c713dd467510f50243e9c5cf55bdf892b5f0c9242",
+    "runtime": {
+      "pyxccd_version": "1.1.0",
+      "pyxccd_module": "/gpfs/home/wangshengjie/data-pre/cold_comparison_20261028_v1/environment/lib/python3.11/site-packages/pyxccd/__init__.py",
+      "numpy_version": "2.0.0",
+      "engine_hashes": {
+        "_ccd_cython.cpython-311-x86_64-linux-gnu.so": "cf32ed089b44ea1a75f30c7ece4de70fe83728915bb680b2d844b52a80b60929",
+        "ccd.py": "0f2d12ef94f7fa12575d72e6c11255ba3cfdce6ceb320c2f0e7faab3361af133"
+      },
+      "python_version": "3.11.7 (main, Jan 26 2024, 20:24:17) [GCC 8.5.0 20210514 (Red Hat 8.5.0-21)]",
+      "pipeline_sha256": "013fbfed0e1198d28559188baa507abcba8a4b8f60efd0ec4beeeb6a8d050974"
+    }
+  },
+  "protocol_tests": "11 passed",
+  "cold_function_text_sha256": "76e9969b50d79742b5c16038d5904254b26f3e359e8705b1117766515247750b",
+  "data_transfer_policy": "Original stack and full prepared dataset remain on server; only this small report is returned."
+}

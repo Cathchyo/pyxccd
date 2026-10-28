@@ -21,3 +21,4 @@ src/cxx/ccd.dSYM
 .vscode
 src/cxx/ccd
 src/python/pyxccd/_version.py
+.venv-cold/

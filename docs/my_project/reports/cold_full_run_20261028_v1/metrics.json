@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-10-28T04:09:07.991889+00:00",
+  "status": "complete",
+  "dataset": "C:\\personal\\Jason\\pyxccd\\datasets\\my_project\\processed\\cold_full_v1",
+  "run": "C:\\personal\\Jason\\pyxccd\\datasets\\my_project\\results\\cold_full_run_20261028_v1",
+  "dataset_manifest_sha256": "27a36d66b981496711139520d85b72018eed8d8e014ad789b1637b81813cd957",
+  "selected_params": {
+    "p_cg": 0.999,
+    "conse": 4
+  },
+  "validation": {
+    "n": 8793,
+    "tp": 1023,
+    "fp": 67,
+    "fn": 111,
+    "tn": 7592,
+    "precision": 0.9385321100917431,
+    "recall": 0.9021164021164021,
+    "f1": 0.9199640287769785,
+    "omission_rate": 0.09788359788359788,
+    "commission_rate": 0.061467889908256884,
+    "false_positive_rate": 0.008747878313095704
+  },
+  "test": {
+    "n": 8971,
+    "tp": 946,
+    "fp": 52,
+    "fn": 270,
+    "tn": 7703,
+    "precision": 0.9478957915831663,
+    "recall": 0.7779605263157895,
+    "f1": 0.8545618789521229,
+    "omission_rate": 0.22203947368421054,
+    "commission_rate": 0.052104208416833664,
+    "false_positive_rate": 0.00670535138620245
+  },
+  "runtime": {
+    "pyxccd_version": "1.1.0",
+    "pyxccd_module": "C:\\personal\\Jason\\pyxccd\\.venv-cold\\Lib\\site-packages\\pyxccd\\__init__.py",
+    "numpy_version": "2.4.6",
+    "engine_hashes": {
+      "_ccd_cython.cp311-win_amd64.pyd": "6c6d67ccbbd813521d08f91b7b473987be615718799c615b35892f681e76d358",
+      "ccd.py": "e3e95c0372e89281e57a0fd8f2c00bf85b92c9d3f7134f2e45c464ef0a1e145c"
+    },
+    "python_version": "3.11.16 (main, Sep  1 2026, 14:15:24) [MSC v.1944 64 bit (AMD64)]",
+    "pipeline_sha256": "013fbfed0e1198d28559188baa507abcba8a4b8f60efd0ec4beeeb6a8d050974"
+  },
+  "validation_trials_verified": 9,
+  "total_detection_calls_verified": 88108,
+  "unresolved_errors": 0,
+  "raw_source_qc": {
+    "flagged_samples": 593,
+    "verified_source_scene_count": 147058,
+    "policy": "Preserve all targets after raw-source scan; no interpolation or sample deletion"
+  }
+}

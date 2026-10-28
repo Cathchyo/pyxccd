@@ -1,0 +1,5 @@
+# Binary source copies and generated experiment data remain local.
+/raw/hls51rtq_snapshot/
+/processed/cold_*/
+/processed/history_*/
+/results/

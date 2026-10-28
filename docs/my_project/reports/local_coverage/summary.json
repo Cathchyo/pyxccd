@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-10-28T02:39:52.434358+00:00",
+  "protocol": "hls51rtq_history_cold_v1",
+  "status": "history_missing",
+  "source_manifest_sha256": "a773bffea0bb848bb1375555c30048b87624923d6efdfadc17a5f278d501eab6",
+  "history_manifest_sha256": null,
+  "splits": {
+    "validation": {
+      "targets": 8793,
+      "eligible": 1350,
+      "target_labels": {
+        "0": 7659,
+        "1": 1134
+      },
+      "eligible_labels": {
+        "0": 1312,
+        "1": 38
+      }
+    },
+    "test": {
+      "targets": 8971,
+      "eligible": 652,
+      "target_labels": {
+        "0": 7755,
+        "1": 1216
+      },
+      "eligible_labels": {
+        "0": 648,
+        "1": 4
+      }
+    }
+  },
+  "note": "History QC is necessary, not proof of stable COLD initialization. Pilot selection is not a final benchmark."
+}
